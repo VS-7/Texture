@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Texture</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@latest/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three/examples/js/controls/TrackballControls.js"></script>
+    <script type="module" src="./script.js" defer></script>
+
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <aside>
+        <ul>
+            <div class="option">
+                <input type="radio" id="none" name="mapping" value="none" checked>
+                <label for="none">None</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="bump_mapping" name="mapping" value="bump_mapping">
+                <label for="bump_mapping">Bump Mapping</label>
+            </div>
+            <div class="option">
+                <input type="radio" id="normal_mapping" name="mapping" value="normal_mapping">
+                <label for="normal_mapping">Normal Mapping</label>
+            </div>
+            <div class="option">
+                <input type="checkbox" id="displacement_mapping" name="displacement_mapping">
+                <label for="displacement_mapping">Displacement Mapping</label>
+            </div>
+        </ul>
+    </aside>
+</body>
+
+</html>
